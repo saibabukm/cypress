@@ -6,6 +6,6 @@
     "pluginsFile": "cypress/plugins/index.js",
     "supportFile": "cypress/support/index.js",
     "screenshotsFolder": "cypress/screenshots",
-    "reporter": "cypress/reporters/custom.js",
+    "reporter": "cypress/reporters",
     "trashAssetsBeforeRuns": true
 }
