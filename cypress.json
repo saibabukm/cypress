@@ -1,0 +1,11 @@
+{
+    "baseUrl": "http://192.168.3.39",
+    "video": true,
+    "fixturesFolder": "cypress/fixtures",
+    "integrationFolder": "cypress/integration",
+    "pluginsFile": "cypress/plugins/index.js",
+    "supportFile": "cypress/support/index.js",
+    "screenshotsFolder": "cypress/screenshots",
+    "reporter": "cypress/reporters/custom.js",
+    "trashAssetsBeforeRuns": true
+}
