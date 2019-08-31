@@ -1,6 +1,6 @@
 // -- Start: Our Application Code --
 
-// -- Import credentials from fixture --
+// Import credentials from fixture
 import userObj from '../../fixtures/user';
 
 beforeEach(() => {
