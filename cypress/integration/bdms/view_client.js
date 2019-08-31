@@ -1,11 +1,11 @@
 // -- Start: Our Cypress Tests --
 
-// view client page
+describe('View Client page', function () {
 
-it('View Client test', () => {
-    cy.visit('/client/view-client');
-    cy.wait(3000);
-    cy.get('.btn-primary').click();
+    it('Add new client', function () {
+        cy.visit('/client/view-client');
+    });
+
 });
 
 // -- End: Our Cypress Tests --
