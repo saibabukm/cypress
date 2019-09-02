@@ -6,6 +6,8 @@ describe('View Client page', function () {
         cy.visit('/client/view-client');
         cy.wait(3000);
         cy.get('.btn-primary').click({ force: true });
+        cy.get('#mat-input-3').type('client');
+
     });
 
 });
