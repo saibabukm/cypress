@@ -25,8 +25,9 @@
 // Cypress.Commands.overwrite("visit", (originalFn, url, options) => { ... })
 
 Cypress.Commands.add('login', () => {
-    cy.visit('/login')
-    cy.get('#mat-input-0').type('admin')
-    cy.get('#mat-input-1').type('123456')
-    cy.get('.btn-primary').click()
+    cy.visit('/login');
+    cy.get('#mat-input-0').type('admin');
+    cy.get('#mat-input-1').type('123456');
+    cy.get('.btn-primary').click();
+    cy.wait(1500);
 });
