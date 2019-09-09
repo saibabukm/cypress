@@ -8,7 +8,7 @@ describe('Login Page', function () {
         cy.fixture('user').as('userObj');
     });
 
-    it('Login Test', function () {
+    it.skip('Login Test', function () {
         cy.visit('/login');
         cy.get('#mat-input-0').type(userObj['Username']);
         cy.get('#mat-input-1').type(userObj['Password']);

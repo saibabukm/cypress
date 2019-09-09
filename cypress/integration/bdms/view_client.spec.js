@@ -2,7 +2,7 @@
 
 describe('View Client page', function () {
 
-    it('Add Entity', function () {
+    it.skip('Add Entity', function () {
         cy.login();
         cy.visit('/client/view-client');
         cy.get('.btn-primary').click({ force: true });
