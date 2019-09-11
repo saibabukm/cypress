@@ -11,8 +11,11 @@ describe('Worksheet page', function () {
         cy.get('#mat-tab-content-0-1').scrollTo('bottom');
         cy.scrollTo('0', '100%');
         cy.wait(2000);
-        cy.get('.btn-primary').click({force: true});
+        cy.get('.btn-primary').click({ force: true });
         cy.get('#mat-tab-content-0-1').scrollTo('top');
         cy.scrollTo('0', '0%');
+        cy.get('.breadcrumb-top-header__right-menu > ul > li > a > .material-icons').click();
+        cy.wait(1500);
+        cy.get('.mat-menu-content > :nth-child(2)').click();
     });
 });
