@@ -33,3 +33,5 @@ describe('Manage User page', function () {
 
     });
 });
+
+// -- End: Our Cypress Tests --

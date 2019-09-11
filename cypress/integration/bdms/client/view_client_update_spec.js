@@ -9,3 +9,5 @@ describe('Update Client page', function () {
         cy.get('.btn-primary').click({ force: true });
     });
 });
+
+// -- End: Our Cypress Tests --

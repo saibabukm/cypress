@@ -1,3 +1,5 @@
+// -- Start: Our Cypress Tests --
+
 describe('Logout page', function () {
 
     it.skip('Logout test', () => {
@@ -7,5 +9,7 @@ describe('Logout page', function () {
     });
 
 });
+
+// -- End: Our Cypress Tests --
 
 // -- End: Our Application Code --

@@ -14,3 +14,5 @@ describe('Update User page', function () {
         // cy.wait(3000);
     });
 });
+
+// -- End: Our Cypress Tests --

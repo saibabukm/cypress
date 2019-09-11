@@ -1,7 +1,9 @@
 // -- Start: Our Application Code --
 
+// -- Start: Our Cypress Tests --
+
 // Import credentials from fixture
-import userObj from '../../fixtures/user';
+import userObj from '../../../fixtures/user.json';
 
 describe('Login Page', function () {
     beforeEach(function () {
@@ -16,3 +18,5 @@ describe('Login Page', function () {
     });
 
 });
+
+// -- End: Our Cypress Tests --
