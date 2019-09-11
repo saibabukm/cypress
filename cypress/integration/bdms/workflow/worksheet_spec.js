@@ -17,5 +17,6 @@ describe('Worksheet page', function () {
         cy.get('.breadcrumb-top-header__right-menu > ul > li > a > .material-icons').click();
         cy.wait(1500);
         cy.get('.mat-menu-content > :nth-child(2)').click();
+
     });
 });

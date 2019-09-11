@@ -15,8 +15,8 @@ describe('Login Page', function () {
         cy.get('#mat-input-0').type(userObj['Username']);
         cy.get('#mat-input-1').type(userObj['Password']);
         cy.get('.btn-primary').click();
-    });
 
+    });
 });
 
 // -- End: Our Cypress Tests --

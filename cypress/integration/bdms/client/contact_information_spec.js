@@ -1,8 +1,7 @@
 // -- Start: Our Cypress Tests --
 
 describe('Contact Information page', function () {
-
-    it('Add Conatct', function () {
+    it.skip('Add Conatct', function () {
         cy.login();
         cy.visit('/client/contact-information');
         cy.wait(3000);

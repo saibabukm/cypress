@@ -1,7 +1,6 @@
 // -- Start: Our Cypress Tests --
 
 describe('View Client page', function () {
-
     it.skip('Add Entity', function () {
         cy.login();
         cy.visit('/client/view-client');
@@ -64,8 +63,8 @@ describe('View Client page', function () {
         cy.get('#mat-input-12').type('https://www.theaustralian.com.au');
 
         cy.get('.btn-primary');
-    });
 
+    });
 });
 
 // -- End: Our Cypress Tests --
