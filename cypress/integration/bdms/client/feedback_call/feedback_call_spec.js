@@ -1,7 +1,7 @@
 // -- Start: Our Cypress Tests --
 
 describe('Feedback call page', function () {
-    it('Add Feedback call', function () {
+    it.skip('Add Feedback call', function () {
         cy.login();
         cy.visit('/client/feedback-call');
         cy.get('.open-dialog-btn').click();
