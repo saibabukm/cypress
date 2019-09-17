@@ -1,7 +1,7 @@
 // -- Start: Our Cypress Tests --
 
 describe('Update Client page', function () {
-    it('Update Entity', function () {
+    it.skip('Update Entity', function () {
         cy.login();
         cy.visit('/client/view-client');
         cy.get('#mat-input-0').click();
@@ -33,12 +33,16 @@ describe('Update Client page', function () {
         cy.get('#mat-select-18').click();
         cy.get('#mat-option-118').click();
         cy.get('.cdk-overlay-backdrop').click();
+        cy.scrollTo('bottom');
 
-        cy.get('body').find('[class="tox-edit-area"]');
+        cy.get("iframe").then(function ($iframe) {
+            const $body = $iframe.contents().find('body');
+            cy.wrap($body).find('p').type("Hello Tester", { force: true });
+        });
 
         cy.scrollTo(0, 0);
 
-        cy.get('#mat-tab-label-1-4 > .mat-tab-label-content').click();
+        cy.get('#mat-tab-label-1-1 > .mat-tab-label-content').click();
 
         cy.get('#mat-select-19').click();
         cy.get('#mat-option-152').click();
