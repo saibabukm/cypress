@@ -14,6 +14,17 @@ describe('Report page', function () {
 
         cy.get('.ng-input').click();
         cy.get('.ng-input > .ng-star-inserted').type('Lev Lloyd{enter}');
+
+        cy.get('#mat-chip-list-0').trigger('mousedown', { which: 1 });
+        cy.wait(1000);
+        cy.get('#rightDragableModel').trigger('mousemove').trigger('mouseup');
+
+        cy.get('#mat-chip-list-1').trigger('mousedown', { which: 1 });
+        cy.wait(1000);
+        cy.get('#rightDragableModel').trigger('mousemove').trigger('mouseup');
+
+        cy.get('.btn-primary').click();
+        cy.scrollTo('bottom');
     });
 });
 
