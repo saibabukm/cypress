@@ -1,7 +1,7 @@
 // -- Start: Our Cypress Tests --
 
 describe('Report page', function () {
-    it('Add Report', function () {
+    it.skip('Add Report', function () {
         cy.login();
         cy.visit('/report/bank-report');
 
