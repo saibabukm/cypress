@@ -1,7 +1,7 @@
 // -- Start: Our Cypress Tests --
 
 describe('In Info page', function () {
-    it('Add In', function () {
+    it.skip('Add In', function () {
         cy.login();
         cy.visit('/billing/invoices/new-invoice');
 

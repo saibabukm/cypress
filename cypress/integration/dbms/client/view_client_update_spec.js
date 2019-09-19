@@ -1,7 +1,7 @@
 // -- Start: Our Cypress Tests --
 
 describe('Update Client page', function () {
-    it.skip('Update Entity', function () {
+    it('Update Entity', function () {
         cy.login();
         cy.visit('/client/view-client');
         cy.get('#mat-input-0').click();
@@ -32,12 +32,13 @@ describe('Update Client page', function () {
 
         cy.get('#mat-select-18').click();
         cy.get('#mat-option-118').click();
+
         cy.get('.cdk-overlay-backdrop').click();
         cy.scrollTo('bottom');
 
         cy.get("iframe").then(function ($iframe) {
             const $body = $iframe.contents().find('body');
-            cy.wrap($body).find('p').type("Hello Tester", { force: true });
+            cy.wrap($body).find('#tinymce > p').type("Hello Tester", { force: true });
         });
 
         cy.scrollTo(0, 0);
