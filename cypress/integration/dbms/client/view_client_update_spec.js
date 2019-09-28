@@ -1,12 +1,12 @@
 // -- Start: Our Cypress Tests --
 
 describe('Update Client page', function () {
-    it('Update Entity', function () {
+    it.skip('Update Entity', function () {
         cy.login();
         cy.visit('/client/view-client');
         cy.get('#mat-input-0').click();
-        cy.get('#mat-input-0').type('Leah Lee{enter}');
-        cy.get('[aria-describedby="cdk-describedby-message-48"] > .material-icons').contains('edit').click();
+        cy.get('#mat-input-0').type('LN DEMO{enter}');
+        cy.get('[aria-describedby="cdk-describedby-message-37"] > .material-icons').contains('edit').click();
 
         // Software
         cy.get('#mat-tab-label-1-1 > .mat-tab-label-content').click();
@@ -35,11 +35,6 @@ describe('Update Client page', function () {
 
         cy.get('.cdk-overlay-backdrop').click();
         cy.scrollTo('bottom');
-
-        cy.get("iframe").then(function ($iframe) {
-            const $body = $iframe.contents().find('body');
-            cy.wrap($body).find('#tinymce > p').type("Hello Tester", { force: true });
-        });
 
         cy.scrollTo(0, 0);
 

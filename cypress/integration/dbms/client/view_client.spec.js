@@ -6,10 +6,10 @@ describe('View Client page', function () {
         cy.visit('/client/view-client');
         cy.get('.btn-primary').click({ force: true });
         cy.wait(3000);
-        cy.get('#mat-input-1').type('BN Test');
-        cy.get('#mat-input-2').type('LN Test');
-        cy.get('#mat-input-3').type('TN Test');
-        cy.get('#mat-input-4').type('05-09-2019');
+        cy.get('#mat-input-1').type('BN DEMO');
+        cy.get('#mat-input-2').type('LN DEMO');
+        cy.get('#mat-input-3').type('TN DEMO');
+        cy.get('#mat-input-4').type('01-07-2019');
         cy.get('#mat-input-5').type('10');
         cy.wait(500);
 
